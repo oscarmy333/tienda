@@ -16,6 +16,7 @@ public class ProductFullController {
     @Autowired
     private ProductService productService;
 
+    //GET /products?categoryId=1
     @GetMapping
     public ResponseEntity<List<ProductFull>>
     listProduct(@RequestParam(name = "categoryId", required = false) Long categoryId) {
